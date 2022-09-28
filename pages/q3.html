@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questão 3</title>
+</head>
+
+<body>
+	<script>
+		const height = Number(prompt('Entre com valor altura:'))
+		const sexual_orientation = Number(prompt('Entre com o valor 1 para masculino ou 2 para feminino:'))
+		var Weight
+		if (sexual_orientation === 1) {
+			Weight = (72 * height) - 58
+			alert(`Peso ideal: ${Weight.toFixed(2)}`)
+		} else if (sexual_orientation === 2) {
+			Weight = (62 * height) - 44
+			alert(`Peso ideal: ${Weight.toFixed(2)}`)
+		} else {
+			alert('Seleção incorreta')
+		}
+	</script>
+</body>
+
+</html>

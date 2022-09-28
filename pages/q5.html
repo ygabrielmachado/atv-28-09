@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questão 5</title>
+</head>
+
+<body>
+	<script>
+		const hundred = Number(prompt('Entre com uma centena:'))
+		if (hundred > 100 && hundred < 999) {
+			const unity = hundred % 10
+			const tens = ((hundred % 100) - unity)
+			const hundred_calc = Math.floor(hundred / 100)
+			const hundred_flp = (unity * 100) + tens + hundred_calc
+			alert(`Centena- ${hundred}-Centena invertida: ${hundred_flp}`)
+		} else {
+			alert('Entre com uma centena')
+		}
+	</script>
+</body>
+
+</html>
